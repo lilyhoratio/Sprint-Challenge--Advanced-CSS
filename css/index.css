@@ -163,6 +163,10 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.website-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .main-navigation {
   width: 100%;
   background: #F6F6F6;
