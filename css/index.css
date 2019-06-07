@@ -182,6 +182,14 @@ p {
 }
 .main-navigation nav a {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: #454A59;
+}
+.main-navigation nav a:hover {
+  text-decoration: none;
+  color: #F6F6F6;
+  background-color: #454A59;
+  border-radius: 3px;
 }
 footer {
   color: #22283B;

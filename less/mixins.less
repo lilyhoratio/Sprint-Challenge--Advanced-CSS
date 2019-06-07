@@ -2,10 +2,29 @@
 
 // Flex mixin
 
-.flexDisplay(@direction, @justify, @align) {
+.flex-display(@direction, @justify, @align) {
     display: flex;
     flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
 
+// Button mixin
+
+.button-maker(@width, @height, @bg-color, @font-color, @font-size) {
+    border-radius: 5px;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    font-size: @font-size;
+}
+
+// Navbar mixin for links
+
+.navbar-link-hover(@text-decoration, @font-color, @bg-color) {
+    text-decoration: @text-decoration;
+    color: @font-color;
+    background-color: @bg-color;
+    border-radius: 3px;
+}

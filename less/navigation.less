@@ -5,14 +5,20 @@
     border-bottom: 1px solid @nav-border;
     color: @nav-font;
     height: 90px;
-    .flexDisplay(column, space-evenly, center);
+    .flex-display(column, space-evenly, center);
 
     nav {
-        .flexDisplay(row, space-evenly, center);
+        .flex-display(row, space-evenly, center);
         width: 30%;
 
         a {
             text-decoration: none;
+            font-size: 1.5rem;
+            color: @nav-font;
+
+            &:hover {
+                .navbar-link-hover(none, @nav-bg, @nav-font)
+            }
         }
     }
 }
