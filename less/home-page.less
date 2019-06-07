@@ -27,7 +27,7 @@
     @media @phone {
 
       .blast {
-        width: 90%;
+        width: 100%;
       }
       .sky {
         display: none;
@@ -65,8 +65,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 10px;
+      margin: 0;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        padding: 10px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -85,6 +97,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 10px 0;
+      }
       
       img {
         width: 100%;
