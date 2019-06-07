@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will adapt to specific screen sizes on a device, and designs are typically hardcoded per screen size. Reponsive websites will adapt to any screen size and also use responsive units (e.g. ems/rems/%s instead of pixels).
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Designing for mobile first means designing CSS that first applies to a mobile device and then extends to accommodate for larger screens. Mobile first designs will typically contain base CSS to everything up until whatever styles are applied within a min-width media query. Desktop first design is vice-versa, and typically utilize max-width media queries to apply new styling for mobile breakpoints.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Default font sizes in browsers are typically set at 16px. Having the html tag’s font-size set to 62.5% sets the root font size to 10px (16px * 0.625 = 10px). Developers can then easily use rems (1 rem = 10 pixels) to convert from pixels through multiples of 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+While powerful, CSS has limitations and often contains repetitive code and inefficient ways to reuse commonly used patterns.  Preprocessing allows developers to superpower their CSS by improving the readability and reusability of their code through variables, functions, nesting, etc.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is mixins and being able to basically create design patterns in your CSS code. Nesting has given be some trouble because it is easy to accidentally incorrectly apply nesting, especially when media queries are involved and there are many layers, which may make debugging difficult.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,12 +60,12 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
@@ -78,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -96,7 +106,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x] Add a viewport meta tag to the head of your index.html page
 
 * [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
