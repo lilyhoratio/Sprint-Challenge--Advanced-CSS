@@ -1,6 +1,7 @@
 // Navigation code here
 
 .main-navigation {
+    width: 100%;
     background: @nav-bg;
     border-bottom: 1px solid @nav-border;
     color: @nav-font;
@@ -10,6 +11,10 @@
     nav {
         .flex-display(row, space-evenly, center);
         width: 30%;
+
+        @media @phone {
+            width: 100%;
+        }
 
         a {
             text-decoration: none;

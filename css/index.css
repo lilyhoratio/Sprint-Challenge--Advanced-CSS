@@ -164,6 +164,7 @@ p {
   margin: 0 auto;
 }
 .main-navigation {
+  width: 100%;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   color: #454A59;
@@ -179,6 +180,11 @@ p {
   justify-content: space-evenly;
   align-items: center;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .main-navigation nav {
+    width: 100%;
+  }
 }
 .main-navigation nav a {
   text-decoration: none;
@@ -203,6 +209,7 @@ footer {
 }
 .home .intro .space {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -214,6 +221,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
