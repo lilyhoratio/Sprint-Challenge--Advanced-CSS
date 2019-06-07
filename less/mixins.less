@@ -18,6 +18,14 @@
     background-color: @bg-color;
     color: @font-color;
     font-size: @font-size;
+    .flex-display(row, center, center);
+    border: 2px solid @bg-color;
+
+    // hover swaps font and background color
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    }
 }
 
 // Navbar mixin for links
