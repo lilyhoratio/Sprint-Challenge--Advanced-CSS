@@ -1,1 +1,42 @@
 // Mixins Here
+
+// Flex mixin
+
+.flex-display(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// Button mixin
+
+.button-maker(@width, @height, @bg-color, @font-color, @font-size) {
+    border-radius: 5px;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    font-size: @font-size;
+    .flex-display(row, center, center);
+    border: 2px solid @bg-color;
+
+    // hover swaps font and background color
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    }
+
+    @media @phone {
+        width: 100%;
+    }
+}
+
+// Navbar mixin for links
+
+.navbar-link-hover(@text-decoration, @font-color, @bg-color) {
+    text-decoration: @text-decoration;
+    color: @font-color;
+    background-color: @bg-color;
+    border-radius: 3px;
+}
